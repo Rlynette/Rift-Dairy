@@ -83,6 +83,12 @@ function incomeOverTime(){
           list.innerHTML = "Income for month " + " " + month + " " + "is" + " " + total
           parentUl.appendChild(list);
       }
-  
-  
-  }
+   }
+   function totalincomeperYear(){
+    yearly = results * 365 * 45;
+
+    let totalincomeperYear = document.getElementById("totalincome")
+    totalincomeperYear.innerHTML = "Yearly income is" + " " + yearly
+}
+  document.getElementById("defaultOpen").click();
+ 
