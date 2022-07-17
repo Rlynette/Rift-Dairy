@@ -30,7 +30,10 @@
     display: flex; */
 /* } */
 .tag{
-    color: black;
+    color: white;
+    background-color: #6f9a37;
+    min-height: 100px;
+    text-align: center;
 }
 
 /* .nav a{ */
@@ -55,3 +58,19 @@
     float: right;
     right: 0;
 } */
+
+.sidebar{
+    height: 200px;
+    width: 150px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    padding-top: 40px;
+    background-color: lightblue;
+}
+.sidebar div {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+}
+

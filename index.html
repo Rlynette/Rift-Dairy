@@ -9,14 +9,52 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Rift-Dairies</title>
 
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo">Rift-Dairy/Brookside-Year Contract</div>
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="dashboard(event, 'Production')" id="defaultOpen">Production</button>
+        <button class="tablinks" onclick="dashboard(event, 'Sales')">Sales</button>
+        <button class="tablinks" onclick="dashboard(event, 'Weekly Reports')">Weekly Reports</button>
+        <button class="tablinks" onclick="dashboard(event, 'Monthly Reports')">Monthly Reports</button>
+        <button class="tablinks" onclick="dashboard(event, 'Yearly Reports')">Yearly Reports</button>
+      </div>
+
+      <div class="nav">
+        <div class="tag" >
+            <h1>Rift-Dairy/Brookside-Year Contract</h1>
+        </div>
+
+        <div class ="link">
+            <!-- <h1 id="dashboard">Dashboard</h1> -->
+                    <h3 id="dashboard">Dashboard</h3>
+                    <h3 id="production">Production</h3>
+                    <h3 id="sales">Sales</h3>
+        </div>
+                    
+
+        <div class="reports">
+            <h2>Saved Reports</h2>
+                <h3 id="weekly"> Weekly Report</h3>
+                <h3 id="weekly"> Monthly Report</h3>
+                <h3 id="weekly"> Yearly Report</h3>
+        </div>
+</div>  
+
+
+
+
+
+
+
  <div class="nav">
-        <div class="tag">
+        <div class="tag" >
             <h1>Rift-Dairy/Brookside-Year Contract</h1>
         </div>
 
@@ -43,7 +81,7 @@
         <h2>Day's Production</h2>
 
      <ul>
-          <li>Shed A - 510 Litres/Day</li>
+          <li>Shed A - 510Litres/Day </li>
           <li>Shed B - 308 Litres/Day </li>
           <li>Shed C - 486 Litres/Day</li>
           <li>Shed D - 572 Litres/Day</li>
@@ -52,7 +90,7 @@
 </div>
 
 <div class="weeklyproduction"> 
-   <h2><p>Day's production *7 Days in a week</p></h2>
+   <h2><p>Weekly production (*7 Days in a week)</p></h2>
 
     <ul>
         <li>Shed A - 3,570 Litres/Week</li>
@@ -64,7 +102,7 @@
 </div>
 
 <div class="monthlyproduction"> 
-    <h2><p>Day's production *30 Days in a month</p></h2>
+    <h2><p>Monthly production (*30 Days in a month)</p></h2>
 
     <ul>
         <li>Shed A - 15,300 Litres/Month</li>
@@ -76,7 +114,7 @@
 </div>
 
 <div class="yearlyproduction"> 
-   <h2><p>Day's production *366 Days in a Leap Year</p></h2>
+   <h2><p>Yearly production (*366 Days in a Leap Year)</p></h2>
 
     <ul>
         <li>Shed A - 186,660 Litres/Year</li>
@@ -100,7 +138,7 @@
 </div>
 
 <div class="weeklysales">
-         <h2><p>Day's sales *7 Days in a week</p></h2>
+         <h2><p>Weekly sales (*7 Days in a week)</p></h2>
 
       <ul>
            <li>Shed A - KSH. 160,650</li>
@@ -112,7 +150,7 @@
 </div>
 
 <div class="monthlysales">
-    <h2><p>Day's sales *30 Days in a month</p></h2>
+    <h2><p>Monthly sales (*30 Days in a month)</p></h2>
 
     <ul>
         <li>Shed A - KSH. 688,500</li>
@@ -124,7 +162,7 @@
 </div>
 
 <div class="yearlysales">
-    <h2><p>Day's sales *366 Days in a year</p></h2>
+    <h2><p>Yearly sales (*366 Days in a year)</p></h2>
 
     <ul>
       <li>Shed A - KSH. 8,399,700</li>
@@ -138,7 +176,7 @@
 
 <div class="monthlyincome">
     <h2><p>Total Income for each month</p></h2>
-    <p>Sales in a day = Ksh. 84,420</p>
+    <p>Income in a day = Ksh. 84,420</p>
 
     <ul>
         <li>January - KSH.2,617,020 </li>
@@ -158,6 +196,6 @@
 </div>
 
 
-<script src="./scripts.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
