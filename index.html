@@ -26,6 +26,7 @@
         <button class="tablinks" onclick="dashboard(event, 'Yearly Reports')">Yearly Reports</button>
       </div>
 
+
       <div id="Production" class="tabcontent">
         <h3>PRODUCTION</h3>
         <h4 class="results" id="mySheds">Day's Production</h4>
@@ -46,6 +47,7 @@
             </button>
       </div>
 
+
       <div id="Sales" class="tabcontent">
         <h3>Sales</h3>
         <h4 class="results" id="weeklysales">Weekly income</h4>
@@ -63,170 +65,32 @@
       </div>
 
 
+      <div id="Weekly Reports" class="tabcontent">
+        <h3>Weekly Reports</h3>
+        <h4 class="results" id="totalincomeweek">Weekly income</h4>
+        <button onclick="totalincomeperWeek()">
+            <p>Results</p>
+        </button>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <div class="nav">
-        <div class="tag" >
-            <h1>Rift-Dairy/Brookside-Year Contract</h1>
+      <div id="Monthly Reports" class="tabcontent">
+        <div id="monthly" class="results">
+        <h3>Monthly Reports</h3>
+        <button onclick="totalIncomeEachMonth()">
+            <p>Results</p>
+        </button>
         </div>
+      </div>
 
-        <div class ="link">
-            <!-- <h1 id="dashboard">Dashboard</h1> -->
-                    <h3 id="dashboard">Dashboard</h3>
-                    <h3 id="production">Production</h3>
-                    <h3 id="sales">Sales</h3>
-        </div>
-                    
-
-        <div class="reports">
-            <h2>Saved Reports</h2>
-                <h3 id="weekly"> Weekly Report</h3>
-                <h3 id="weekly"> Monthly Report</h3>
-                <h3 id="weekly"> Yearly Report</h3>
-        </div>
-</div>   
-
-
-<!-- production -->
-<div class="dayproduction">
-        <h1>Production</h1>
-        <h2>Day's Production</h2>
-
-     <ul>
-          <li>Shed A - 510Litres/Day </li>
-          <li>Shed B - 308 Litres/Day </li>
-          <li>Shed C - 486 Litres/Day</li>
-          <li>Shed D - 572 Litres/Day</li>
-          <li>Total Production - 1876 Litres/Day</li>
-     </ul>
-</div>
-
-<div class="weeklyproduction"> 
-   <h2><p>Weekly production (*7 Days in a week)</p></h2>
-
-    <ul>
-        <li>Shed A - 3,570 Litres/Week</li>
-          <li>Shed B - 2,156 Litres/Week </li>
-          <li>Shed C - 3,402 Litres/Week</li>
-          <li>Shed D - 4,004 Litres/Week</li>
-          <li>Total Production - 12,782 Litres/Week</li>
-    </ul>
-</div>
-
-<div class="monthlyproduction"> 
-    <h2><p>Monthly production (*30 Days in a month)</p></h2>
-
-    <ul>
-        <li>Shed A - 15,300 Litres/Month</li>
-          <li>Shed B - 9,240 Litres/Month</li>
-          <li>Shed C - 14,580 Litres/Month</li>
-          <li>Shed D - 17,160 Litres/Month</li>
-          <li>Total Production - 56,280 Litres/Month</li>
-    </ul>
-</div>
-
-<div class="yearlyproduction"> 
-   <h2><p>Yearly production (*366 Days in a Leap Year)</p></h2>
-
-    <ul>
-        <li>Shed A - 186,660 Litres/Year</li>
-          <li>Shed B - 112,728 Litres/Year </li>
-          <li>Shed C - 117,876 Litres/Year</li>
-          <li>Shed D - 209,352 Litres/Year</li>
-          <li>Total Production - 686,616 Litres/Year</li>
-    </ul>
-</div>
-
-<div class="daysales">
-        <h2>Sales <p>Ksh.45 per Litre</p></h2>
-
-     <ul>
-           <li>Shed A - KSH. 22,950</li>
-           <li>Shed B - KSH. 13,860</li>
-           <li>Shed C - KSH. 21,870</li>
-           <li>Shed D - KSH. 25,740</li>
-           <li>Total Production - KSH. 84,420</li>
-     </ul>
-</div>
-
-<div class="weeklysales">
-         <h2><p>Weekly sales (*7 Days in a week)</p></h2>
-
-      <ul>
-           <li>Shed A - KSH. 160,650</li>
-           <li>Shed B - KSH. 97,020</li>
-           <li>Shed C - KSH. 153,090</li>
-           <li>Shed D - KSH. 180,180</li>
-           <li>Total Production - KSH. 590,940</li> 
-      </ul>
-</div>
-
-<div class="monthlysales">
-    <h2><p>Monthly sales (*30 Days in a month)</p></h2>
-
-    <ul>
-        <li>Shed A - KSH. 688,500</li>
-        <li>Shed B - KSH. 415,800</li>
-        <li>Shed C - KSH. 656,100</li>
-        <li>Shed D - KSH. 772,200</li>
-        <li>Total Production - KSH. 2,532,600</li> 
-    </ul>
-</div>
-
-<div class="yearlysales">
-    <h2><p>Yearly sales (*366 Days in a year)</p></h2>
-
-    <ul>
-      <li>Shed A - KSH. 8,399,700</li>
-      <li>Shed B - KSH. 5,072,760</li>
-      <li>Shed C - KSH. 8,004,420</li>
-      <li>Shed D - KSH. 9,420,840</li>
-      <li>Total Production - KSH. 30,897,720</li> 
-    </ul>
-</div>
-
-
-<div class="monthlyincome">
-    <h2><p>Total Income for each month</p></h2>
-    <p>Income in a day = Ksh. 84,420</p>
-
-    <ul>
-        <li>January - KSH.2,617,020 </li>
-        <li>February - KSH.2,448,180 </li>
-        <li>March - KSH.2,617,020 </li>
-        <li>April - KSH.2,532,600 </li>
-        <li>May - KSH.2,617,020 </li>
-        <li>June - KSH.2,532,600 </li>
-        <li>July - KSH.2,617,020 </li>
-        <li>August - KSH.2,617,020 </li>
-        <li>September - KSH.2,532,600 </li>
-        <li>October - KSH.2,617,020 </li>
-        <li>November - KSH.2,532,600 </li>
-        <li>December- KSH.2,617,020 </li> 
-        <li>Total Production - KSH. 30,897,720</li> 
-    </ul>
-</div>
-
-
+      <div id="Yearly Reports" class="tabcontent">
+        <h3>Yearly Reports</h3>
+        <h4 class="results" id="totalincome">Yearly income</h4>
+        <button onclick="totalincomeperYear()">
+            <p>Results</p>
+        </button>
+      </div>
+   
+      
 <script src="./script.js"></script>
 </body>
 </html>
