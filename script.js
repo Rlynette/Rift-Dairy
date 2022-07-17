@@ -84,6 +84,7 @@ function incomeOverTime(){
           parentUl.appendChild(list);
       }
    }
+   
    function totalincomeperYear(){
     yearly = results * 365 * 45;
 
