@@ -48,3 +48,41 @@ function yearlyProduction(){
     let yearlyproduction = document.getElementById("yearlyproduction")
     yearlyproduction.innerHTML = "Yearly production is" + " " + yearly
 }
+
+function incomeOverTime(){
+    let selling_price = 45;
+      weekly = results * 7 * selling_price;
+      Average_monthly = results * 30 * selling_price;
+      Yearly = results * 365 *selling_price;
+  
+    let weeklyincome = document.getElementById("weeklysales")
+      weeklyincome.innerHTML = "The weekly income is" + " " + weekly
+    let monthlyincome = document.getElementById("monthlysales")
+      monthlyincome.innerHTML = "The monthly income is" + " " + Average_monthly
+    let yearlyincome = document.getElementById("yearlysales")
+      yearlyincome.innerHTML = "The yearly income is" + " " + Yearly
+  }
+  
+  
+  function totalincomeperWeek(){
+      weekly = results * 7 * 45;
+  
+      let totalincomeperWeek = document.getElementById("totalincomeweek")
+      totalincomeperWeek.innerHTML = "Weekly income is" + " " + weekly
+  }
+  
+  function totalIncomeEachMonth(){
+      numberofdays_permonth = [31,29,31,30,31,30,31,31,30,31,30,31]
+  
+      for( let i = 0; i<numberofdays_permonth.length; i ++){
+          let parentUl = document.getElementById("monthly")
+          let list = document.createElement("li");
+          month = i+1;
+  
+          total = numberofdays_permonth[i] * results * 45
+          list.innerHTML = "Income for month " + " " + month + " " + "is" + " " + total
+          parentUl.appendChild(list);
+      }
+  
+  
+  }
