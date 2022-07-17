@@ -13,3 +13,17 @@ function dashboard(evt, dashboardName) {
     document.getElementById(dashboardName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+  function outputperShed(){
+    let mySheds = ["A","B","C","D"]
+    let myLitres = [510, 308, 486, 572]
+
+    for ( let i = 0; i < mySheds.length; i++){
+        let parentUl = document.getElementById("mySheds")
+        let list = document.createElement("li");
+        list.innerHTML = "Your production in Shed" + " " + mySheds[i] + " " + "is" + " " + myLitres[i] + " " + "per day";
+        parentUl.appendChild(list);
+
+        results += myLitres[i]
+        
+    }
+}
