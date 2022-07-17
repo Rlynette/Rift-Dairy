@@ -13,6 +13,7 @@ function dashboard(evt, dashboardName) {
     document.getElementById(dashboardName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
   function outputperShed(){
     let mySheds = ["A","B","C","D"]
     let myLitres = [510, 308, 486, 572]
@@ -26,4 +27,24 @@ function dashboard(evt, dashboardName) {
         results += myLitres[i]
         
     }
+}
+function weeklyProduction(){
+    weekly = results * 7;
+
+    let weeklyproduction = document.getElementById("weeklyproduction")
+    weeklyproduction.innerHTML = "Weekly production is" + " " + weekly
+}
+
+function monthlyProduction(){
+    monthly = results * 30;
+
+    let monthlyproduction = document.getElementById("monthlyproduction")
+    monthlyproduction.innerHTML = "Monthly production is" + " " + monthly
+}
+
+function yearlyProduction(){
+    yearly = results * 365;
+
+    let yearlyproduction = document.getElementById("yearlyproduction")
+    yearlyproduction.innerHTML = "Yearly production is" + " " + yearly
 }
