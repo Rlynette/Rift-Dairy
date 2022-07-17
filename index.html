@@ -26,32 +26,49 @@
         <button class="tablinks" onclick="dashboard(event, 'Yearly Reports')">Yearly Reports</button>
       </div>
 
-      <div class="nav">
-        <div class="tag" >
-            <h1>Rift-Dairy/Brookside-Year Contract</h1>
-        </div>
-
-        <div class ="link">
-            <!-- <h1 id="dashboard">Dashboard</h1> -->
-                    <h3 id="dashboard">Dashboard</h3>
-                    <h3 id="production">Production</h3>
-                    <h3 id="sales">Sales</h3>
-        </div>
-                    
-
-        <div class="reports">
-            <h2>Saved Reports</h2>
-                <h3 id="weekly"> Weekly Report</h3>
-                <h3 id="weekly"> Monthly Report</h3>
-                <h3 id="weekly"> Yearly Report</h3>
-        </div>
-</div>  
-
+      <div id="Production" class="tabcontent">
+        <h3>PRODUCTION</h3>
+        <h4 class="results" id="mySheds">Day's Production</h4>
+            <button onclick="outputperShed()">
+                <p>Results</p>
+            </button>
+        <h4 class="results" id="weeklyproduction">Weekly Production (*7 Days in a week)</h4>
+            <button onclick="weeklyProduction()">
+                <p>Results</p>
+            </button>
+        <h4 class="results" id="monthlyproduction">Monthly Production (*30 Days in a Month)</h4>
+            <button onclick="monthlyProduction()">
+                <p>Results</p>
+            </button>
+        <h4 class="results" id="yearlyproduction">Yearly Production (*366 Days in a Year)</h4>
+            <button onclick="yearlyProduction()">
+                <p>Results</p>
+            </button>
+      </div>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
 
  <div class="nav">
         <div class="tag" >
