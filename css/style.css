@@ -1,1 +1,9 @@
-
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+   }
