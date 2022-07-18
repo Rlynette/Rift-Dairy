@@ -43,7 +43,7 @@ function monthlyProduction(){
 }
 
 function yearlyProduction(){
-    yearly = results * 365;
+    yearly = results * 366;
 
     let yearlyproduction = document.getElementById("yearlyproduction")
     yearlyproduction.innerHTML = "Yearly production is" + " " + yearly
@@ -53,7 +53,7 @@ function incomeOverTime(){
     let selling_price = 45;
       weekly = results * 7 * selling_price;
       Average_monthly = results * 30 * selling_price;
-      Yearly = results * 365 *selling_price;
+      Yearly = results * 366 *selling_price;
   
     let weeklyincome = document.getElementById("weeklysales")
       weeklyincome.innerHTML = "The weekly income is" + " " + weekly
@@ -86,7 +86,7 @@ function incomeOverTime(){
    }
    
    function totalincomeperYear(){
-    yearly = results * 365 * 45;
+    yearly = results * 366 * 45;
 
     let totalincomeperYear = document.getElementById("totalincome")
     totalincomeperYear.innerHTML = "Yearly income is" + " " + yearly
