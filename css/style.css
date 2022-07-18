@@ -1,9 +1,17 @@
+body{
+  float: none;
+  justify-content: center;
+  background-size: cover;
+  background-repeat:no-repeat ;
+  background-image:url(https://image.shutterstock.com/image-photo/cows-grazing-on-dairy-farm-260nw-525904921.jpg ) ;
+}
+
 /* NAVBAR STYLING STARTS */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 70px;
     background-color: teal;
     color: #fff;
    }
